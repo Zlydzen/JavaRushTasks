@@ -1,10 +1,9 @@
-instruction.png
-JavaRushPlugin.properties
-JavaRushTasks.iml
-out.log
 .idea
-/out
 3.JavaMultithreading
 4.JavaCollections
 5.OnlineInternship
-.gitignore
+out
+Instruction.png
+JavaRushPlugin.properties
+JavaRushTasks.iml
+out.log
