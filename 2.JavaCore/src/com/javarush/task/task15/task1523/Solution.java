@@ -4,7 +4,7 @@ package com.javarush.task.task15.task1523;
 Перегрузка конструкторов
 */
 
-public class git Solution {
+public class Solution {
     public Solution() {
     }
     private Solution(int q){}
