@@ -14,15 +14,17 @@ public class Solution {
         String nameFile = reader.readLine();
         FileInputStream inputStream = new FileInputStream(nameFile);
 
-        byte[] bytes = inputStream.readAllBytes();
-        byte max = bytes[0];
-        for (byte aByte : bytes) {
-            if (aByte > max) {
-                max = aByte;
+        int maxByte = 0;
+
+        while (inputStream.available() > 0) {
+            int readByte = inputStream.read();
+            if (readByte > maxByte) {
+                maxByte = readByte;
             }
         }
-
-        System.out.println(max);
+        System.out.println(maxByte);
+        inputStream.close();
+        reader.close();
     }
 }
 
